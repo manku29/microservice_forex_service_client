@@ -13,6 +13,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+
+//http://www.springboottutorial.com/microservices-with-spring-boot-part-4-ribbon-for-load-balancing
+
+//http://localhost:8100/currency-converter-feign/from/EUR/to/INR/quantity/10000
+
+
+
 @RestController
 public class CurrencyConversionController {
 
@@ -39,6 +46,8 @@ public class CurrencyConversionController {
 				quantity.multiply(response.getConversionMultiple()), response.getPort());
 	}
 
+	
+	//http://localhost:8100/currency-converter-feign/from/EUR/to/INR/quantity/10000
 	@GetMapping("/currency-converter-feign/from/{from}/to/{to}/quantity/{quantity}")
 	public CurrencyConversionBean convertCurrencyFeign(@PathVariable String from, @PathVariable String to,
 			@PathVariable BigDecimal quantity) {

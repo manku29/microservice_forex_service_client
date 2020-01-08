@@ -1,6 +1,9 @@
 package com.in28minutes.springboot.microservice.example.currencyconversion;
 import java.math.BigDecimal;
+import lombok.Data;
 
+
+@Data
 public class CurrencyConversionBean {
   private Long id;
   private String from;
@@ -26,60 +29,61 @@ public class CurrencyConversionBean {
     this.port = port;
   }
 
-  public Long getId() {
-    return id;
-  }
+public Long getId() {
+	return id;
+}
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+public void setId(Long id) {
+	this.id = id;
+}
 
-  public String getFrom() {
-    return from;
-  }
+public String getFrom() {
+	return from;
+}
 
-  public void setFrom(String from) {
-    this.from = from;
-  }
+public void setFrom(String from) {
+	this.from = from;
+}
 
-  public String getTo() {
-    return to;
-  }
+public String getTo() {
+	return to;
+}
 
-  public void setTo(String to) {
-    this.to = to;
-  }
+public void setTo(String to) {
+	this.to = to;
+}
 
-  public BigDecimal getConversionMultiple() {
-    return conversionMultiple;
-  }
+public BigDecimal getConversionMultiple() {
+	return conversionMultiple;
+}
 
-  public void setConversionMultiple(BigDecimal conversionMultiple) {
-    this.conversionMultiple = conversionMultiple;
-  }
+public void setConversionMultiple(BigDecimal conversionMultiple) {
+	this.conversionMultiple = conversionMultiple;
+}
 
-  public BigDecimal getQuantity() {
-    return quantity;
-  }
+public BigDecimal getQuantity() {
+	return quantity;
+}
 
-  public void setQuantity(BigDecimal quantity) {
-    this.quantity = quantity;
-  }
+public void setQuantity(BigDecimal quantity) {
+	this.quantity = quantity;
+}
 
-  public BigDecimal getTotalCalculatedAmount() {
-    return totalCalculatedAmount;
-  }
+public BigDecimal getTotalCalculatedAmount() {
+	return totalCalculatedAmount;
+}
 
-  public void setTotalCalculatedAmount(BigDecimal totalCalculatedAmount) {
-    this.totalCalculatedAmount = totalCalculatedAmount;
-  }
+public void setTotalCalculatedAmount(BigDecimal totalCalculatedAmount) {
+	this.totalCalculatedAmount = totalCalculatedAmount;
+}
 
-  public int getPort() {
-    return port;
-  }
+public int getPort() {
+	return port;
+}
 
-  public void setPort(int port) {
-    this.port = port;
-  }
+public void setPort(int port) {
+	this.port = port;
+}
 
+  
 }
